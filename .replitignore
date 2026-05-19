@@ -1,0 +1,18 @@
+# Files to ignore when importing to Replit
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.cache/
+.pytest_cache/
+.coverage
+.env
+.venv/
+venv/
+*.log

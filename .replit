@@ -1,0 +1,23 @@
+# Replit configuration for pixel-gemini Telegram Bot
+# https://replit.com
+
+# Entry point when the "Run" button is clicked
+run = "python main.py"
+
+# Language and environment
+language = "python3"
+
+# Hidden files that won't show in the file explorer
+hidden = [".pythonlibs", "__pycache__", ".cache", ".config"]
+
+# Modules to enable
+[env]
+PYTHONPATH = "${PYTHONPATH}:${REPL_HOME}"
+
+# Nix packages (includes Chromium for Selenium)
+[nix]
+channel = "stable-23_11"
+
+# Deployment configuration (for Replit Autoscale/Always On)
+[deployment]
+run = ["sh", "-c", "python main.py"]
